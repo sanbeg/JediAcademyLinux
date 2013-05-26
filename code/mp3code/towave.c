@@ -151,11 +151,11 @@ decode (standard decoder) reduction_code:
 #include "mp3struct.h"
 #include <assert.h>
 
-
+#ifndef LINUX
 #ifndef byte
 typedef unsigned char byte;
 #endif
-
+#endif
 
 
 typedef struct id3v1_1 {
